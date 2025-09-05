@@ -112,7 +112,7 @@ def call_llm(prompt_template, documents):
     
     llm_model = "gemini-2.5-flash"
     input_vars_dict = {"num_questions":2, "context":context}
-    json_response = get_response_from_llm(prompt_template=prompt_template, model=llm_model, documents=documents, input_vars_dict=input_vars_dict)
+    json_response = get_response_from_llm(prompt_template=prompt_template, model=llm_model, input_vars_dict=input_vars_dict)
     return json_response
 
 def main():
